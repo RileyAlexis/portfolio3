@@ -1,0 +1,23 @@
+.flipCard {
+    /* -webkit-animation: flipCard 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; */
+
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.flipCard:hover {
+    animation: flip-diagonal 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+
+@keyframes flip-diagonal {
+    0% {
+        transform: rotate3d(1, 1, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
