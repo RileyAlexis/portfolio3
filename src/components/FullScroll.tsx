@@ -1,6 +1,10 @@
-import { useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 
-export const FullScroll = () => {
+interface FullScrollProps {
+    children: ReactNode;
+}
+
+export const FullScroll = ({ children }: FullScrollProps) => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -24,9 +28,7 @@ export const FullScroll = () => {
 
     return (
         <div ref={containerRef} className="scrollContainer">
-            <div className='section'>Page 1</div>
-            <div className='section'>Page 2</div>
-            <div className='section'>Page 3</div>
+            {children}
         </div>
     )
 }
