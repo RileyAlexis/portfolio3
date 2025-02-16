@@ -64,11 +64,9 @@
     font-size: var(--base-size);
     padding: 0;
     margin: 0;
-    background-color: var(--backgroundColor);
   }
 
   .backgroundContainer {
-    display: flex;
     height: 100vh;
     width: 100vw;
     background: radial-gradient(var(--bottomLayerColor), var(--bottomLayerHighlight));
@@ -84,6 +82,9 @@
 
   header {
     position: fixed;
+    display: flex;
+    width: 100vw;
+    align-items: center;
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -96,5 +97,24 @@
     border: 1px outset rgba(0, 0, 0, 0.3);
     border-radius: 15px 15px 15px 15px;
     z-index: 10;
+  }
+}
+
+.appListContainer {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  /* border: 1px solid black; */
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+
+  .appListContainer {
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    overflow: scroll;
+    ;
   }
 }
