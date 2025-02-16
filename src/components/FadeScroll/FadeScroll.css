@@ -5,6 +5,7 @@
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
       scrollbar-width: none;
+      margin-top: 3rem;
       /* Hides scrollbar in Firefox */
       -ms-overflow-style: none;
   }

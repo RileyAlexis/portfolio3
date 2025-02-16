@@ -1,4 +1,6 @@
 
+import './Card.css';
+
 interface CardProps {
     children: React.ReactNode;
 }
@@ -7,7 +9,7 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({ children }) => {
     return (
         <div className="card">
-            <p>{children}</p>
+            <span>{children}</span>
         </div>
     )
 }
