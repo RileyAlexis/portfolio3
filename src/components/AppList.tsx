@@ -1,4 +1,7 @@
-import { Card } from "./Card/Card"
+import { IconButton } from "@mui/material";
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+import { Card } from "./Card/Card";
 
 export const AppList: React.FC = () => {
     return (
@@ -11,6 +14,9 @@ export const AppList: React.FC = () => {
                         human speech and provides real time feedback on voice resonance.
                     </p>
                 </a>
+                <IconButton color="inherit" href="https://github.com/RileyAlexis/VelvetReact" target="_blank">
+                    <GitHubIcon />
+                </IconButton>
             </Card>
 
             <Card>
@@ -22,6 +28,9 @@ export const AppList: React.FC = () => {
                         babble from multiple datasets and allows users to save generated phrases.
                     </p>
                 </a>
+                <IconButton color="inherit" href="https://github.com/RileyAlexis/transbabbler" target="_blank">
+                    <GitHubIcon />
+                </IconButton>
             </Card>
             <Card>
                 <a onClick={() => window.open('https://tinkl.app', '_blank')} style={{ cursor: 'pointer' }}>
@@ -32,6 +41,9 @@ export const AppList: React.FC = () => {
                         and UI designers.
                     </p>
                 </a>
+                <IconButton color="inherit" href="https://github.com/tinkl-bathroom-finder/tinkl-2.0" target="_blank">
+                    <GitHubIcon />
+                </IconButton>
             </Card>
         </div>
     )

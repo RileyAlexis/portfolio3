@@ -18,7 +18,7 @@ function App() {
 
           <AppList />
           <Card>Card 2 and more things</Card>
-          <Card>Card 3 and lots of more and more more things and stuff</Card>
+          {/* <Card>Card 3 and lots of more and more more things and stuff</Card> */}
         </FadeScroll>
 
       </div >
