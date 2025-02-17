@@ -1,6 +1,4 @@
 //Components
-import { FadeScroll } from './components/FadeScroll/FadeScroll';
-import { Card } from './components/Card/Card';
 import { TitleHeader } from './components/TitleHeader';
 import { AppList } from './components/AppList';
 
@@ -11,17 +9,11 @@ function App() {
   return (
     <div className='backgroundContainer'>
       <div className='back2'>
-        <TitleHeader />
-
-
-        <FadeScroll>
-
+        <div className='contentContainer'>
+          <TitleHeader />
           <AppList />
-          <Card>Card 2 and more things</Card>
-          {/* <Card>Card 3 and lots of more and more more things and stuff</Card> */}
-        </FadeScroll>
-
-      </div >
+        </div >
+      </div>
     </div >
   )
 }
