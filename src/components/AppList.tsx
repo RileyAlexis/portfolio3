@@ -7,20 +7,20 @@ export const AppList: React.FC = () => {
     return (
         <div className="appListContainer">
             <Card>
-                <a onClick={() => window.open('https://velvet.rileyalexis.com', '_blank')} style={{ cursor: 'pointer' }}>
+                <a onClick={() => window.open('https://velvet.rileyalexis.com', '_blank')} style={{ cursor: 'pointer' }} aria-label="velvet.rileyalexis.com">
                     <h3>Velvet</h3>
                     <p>
                         A voice resonance analyzer utilizing the Web Audio API. It isolates the Fundamental Frequency and the First Formant Frequency from
                         human speech and provides real time feedback on voice resonance.
                     </p>
                 </a>
-                <IconButton color="inherit" href="https://github.com/RileyAlexis/VelvetReact" target="_blank">
+                <IconButton color="inherit" href="https://github.com/RileyAlexis/VelvetReact" target="_blank" aria-label="Github Source Code">
                     <GitHubIcon />
                 </IconButton>
             </Card>
 
             <Card>
-                <a onClick={() => window.open('https://transphasic.asuscomm.com', '_blank')} style={{ cursor: 'pointer' }}>
+                <a onClick={() => window.open('https://transphasic.asuscomm.com', '_blank')} style={{ cursor: 'pointer' }} aria-label="transphasic.asuscomm.com">
 
                     <h3>Transbabbler</h3>
                     <p>
@@ -28,12 +28,12 @@ export const AppList: React.FC = () => {
                         babble from multiple datasets and allows users to save generated phrases.
                     </p>
                 </a>
-                <IconButton color="inherit" href="https://github.com/RileyAlexis/transbabbler" target="_blank">
+                <IconButton color="inherit" href="https://github.com/RileyAlexis/transbabbler" target="_blank" aria-label="Github Source Code">
                     <GitHubIcon />
                 </IconButton>
             </Card>
             <Card>
-                <a onClick={() => window.open('https://tinkl.app', '_blank')} style={{ cursor: 'pointer' }}>
+                <a onClick={() => window.open('https://tinkl.app', '_blank')} style={{ cursor: 'pointer' }} aria-label="tinkl.app">
                     <h3>Tinkl</h3>
                     <p>
                         tinkl is a bathroom-finder app that locates nearby gender-neutral and single-stall bathrooms so that trans,
@@ -41,7 +41,7 @@ export const AppList: React.FC = () => {
                         and UI designers.
                     </p>
                 </a>
-                <IconButton color="inherit" href="https://github.com/tinkl-bathroom-finder/tinkl-2.0" target="_blank">
+                <IconButton color="inherit" href="https://github.com/tinkl-bathroom-finder/tinkl-2.0" target="_blank" aria-label="Github Source Code">
                     <GitHubIcon />
                 </IconButton>
             </Card>
